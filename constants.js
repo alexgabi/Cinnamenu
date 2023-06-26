@@ -1,3 +1,5 @@
+const APPLET_UUID = "Cinnamenu@json"
+
 // l10n
 const Gettext = imports.gettext;
 
@@ -6,7 +8,7 @@ function _(str) {
   if (cinnamonTranslation !== str) {
     return cinnamonTranslation;
   }
-  return Gettext.dgettext('Cinnamenu@json', str);
+  return Gettext.dgettext(APPLET_UUID, str);
 }
 
 const REMEMBER_RECENT_KEY = 'remember-recent-files';

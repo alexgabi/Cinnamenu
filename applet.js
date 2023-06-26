@@ -57,7 +57,7 @@ if (typeof require !== 'undefined') {
   fuzzyOptions = constants.fuzzyOptions;
   gridWidths = constants.gridWidths;
 } else {
-  const AppletDir = imports.ui.appletManager.applets['Cinnamenu@json'];
+  const AppletDir = imports.ui.appletManager.applets[constants.APPLET_UUID];
   let storeVersion = typeof Symbol === 'undefined' ? 'store_mozjs24' : 'store';
   store = AppletDir[storeVersion];
   fuzzy = AppletDir.fuzzy.fuzzy;
